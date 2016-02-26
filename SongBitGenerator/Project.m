@@ -3,8 +3,8 @@ function Project(action)
 % Plays songs using random intervals for a specified number of intervals
 % and length of interval
 
-addpath(genpath([getenv('HOME') '/S));
-filelist = dir('/Users/alexrockhill/Documents/UW/Winter 2016 UW/NBIO 450/Songs');
+addpath(genpath([getenv('HOME') '/SongBitGenerator']));
+filelist = dir([getenv('HOME') '/SongBitGenerator/Songs']);
 counter = 1;
 for i = 1:length(filelist)
     if ~isempty(strfind(filelist(i).name,'mp3'))
